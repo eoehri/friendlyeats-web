@@ -1,28 +1,32 @@
-# FriendlyEats (Web)
+# Friendly Eats with Next.js + Firebase
+
+The codelab has the full instructions, but as a quick start, you can do this.
 
 ## Introduction
 
 FriendlyEats is a restaurant recommendation app built on Cloud Firestore.
 For more information about Firestore visit [the docs][firestore-docs].
 
-This project is the starting point for the [Cloud Firestore Web Codelab][codelab],
-which will show you how to build the applications step-by-step. If you'd like to
-simply run the finished result, see the [quickstart app][quickstart].
+## Run the application
 
-<img src="nextjs-end/friendlyeats-finished.webp" />
+1. In your terminal, run:
 
-## Setup
+```sh
+firebase emulators:start --project demo-codelab-nextjs
+```
 
-Follow the [Cloud Firestore Web Codelab][codelab] to set up this sample.
+2. Copy the file `lib/firebase/config-copy.js` to `lib/firebase/config.js` and fill in the values from the Firebase console.
 
-## License
+3. In a new terminal tab/window, run:
 
-© Google, 2018. Licensed under an [Apache-2](./LICENSE) license.
+```sh
+npm i
+npm run dev
+```
 
-## Build Status
+4. In your browser, open the URL: `http://localhost:3000`
 
-[![Build Status](https://travis-ci.org/firebase/friendlyeats-web.svg?branch=master)](https://travis-ci.org/firebase/friendlyeats-web)
+## Use the application
 
-[codelab]: https://codelabs.developers.google.com/codelabs/firestore-web
-[quickstart]: https://github.com/firebase/quickstart-js/tree/master/firestore
-[firestore-docs]: https://firebase.google.com/docs/firestore/
+1. While on `http://localhost:3000/` within your browser, click the "Sign in" button in the top right corner and sign in.
+2. In the dropdown menu in the top right menu, select "Add sample restaurants".
