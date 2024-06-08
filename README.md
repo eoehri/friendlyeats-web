@@ -12,6 +12,11 @@ For more information about Firestore visit [the docs][firestore-docs].
 1. In your terminal, run:
 
 ```sh
+cd .firebase
+npm i
+```
+
+```sh
 firebase emulators:start --project demo-codelab-nextjs
 ```
 
